@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 11 Challenge - Mini Keyboard Piano</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div
+        class="btn left"
+        onclick="moveSlider(100)"
+        onmouseover="stopTimer()"
+        onmouseout="resumeTimer()"
+      ></div>
+      <div
+        class="btn right"
+        onclick="moveSlider(-100)"
+        onmouseover="stopTimer()"
+        onmouseout="resumeTimer()"
+      ></div>
+      <div id="slider-holder">
+        <div></div>
+      </div>
+
+      <div id="piano-holder">
+        <div class="key" id="key1">
+          <div class="top-key">1</div>
+        </div>
+        <div class="key" id="key2">
+          <div class="top-key">2</div>
+        </div>
+        <div class="key" id="key3">
+          <div class="top-key">3</div>
+        </div>
+        <div class="key" id="key4">
+          <div class="top-key">4</div>
+        </div>
+        <div class="key" id="key5">
+          <div class="top-key">5</div>
+        </div>
+        <div class="key" id="key6">
+          <div class="top-key">6</div>
+        </div>
+        <div class="key" id="key7">
+          <div class="top-key">7</div>
+        </div>
+        <div class="key" id="key8">
+          <div class="top-key">8</div>
+        </div>
+        <div class="key" id="key9">
+          <div class="top-key">9</div>
+        </div>
+      </div>
+
+      <audio id="sound1" src="audio/1.mp3"></audio>
+      <audio id="sound2" src="audio/2.mp3"></audio>
+      <audio id="sound3" src="audio/3.mp3"></audio>
+      <audio id="sound4" src="audio/4.mp3"></audio>
+      <audio id="sound5" src="audio/5.mp3"></audio>
+      <audio id="sound6" src="audio/6.mp3"></audio>
+      <audio id="sound7" src="audio/7.mp3"></audio>
+      <audio id="sound8" src="audio/8.mp3"></audio>
+      <audio id="sound9" src="audio/9.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
